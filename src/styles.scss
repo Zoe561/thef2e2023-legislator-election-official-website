@@ -43,6 +43,33 @@ $colors: (
   font-weight: 700;
 }
 
+input {
+  height: 32px;
+  width: 100%;
+  border: 2px solid map-get(map-get($colors, gray), 100);
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  &:hover {
+    border: 2px solid map-get(map-get($colors, primary), 500);
+  }
+  &:focus {
+    border: 2px solid map-get(map-get($colors, primary), 500);
+  }
+}
+
+textarea{
+  width: 100%;
+  border: 2px solid map-get(map-get($colors, gray), 100);
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  &:hover {
+    border: 2px solid map-get(map-get($colors, primary), 500);
+  }
+  &:focus {
+    border: 2px solid map-get(map-get($colors, primary), 500);
+  }
+}
+
 @keyframes bounceRight {
   0%,
   100% {
@@ -62,4 +89,3 @@ $colors: (
 .bounce-right {
   animation: bounceRight 1s ease infinite;
 }
-

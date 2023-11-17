@@ -85,10 +85,10 @@
       </section>
       <!-- 小額捐款 -->
       <section class="md:flex py-xl">
-        <div class="md:w-2/5 flex flex-col justify-between mr-md">
+        <div class="md:w-2/5 flex flex-col justify-between md:pr-md md:mb-0 mb-md">
           <div>
             <app-item-title title="小額捐款" subtitle="Small Donations"></app-item-title>
-            <div class="text-subtitle">您的每筆捐款，
+            <div class="text-subtitle py-md">您的每筆捐款，
               <br>
               是每隻毛孩未來的大大動力！
             </div>
@@ -96,18 +96,53 @@
 
           <div class="h-[109px] bg-gray-500 rounded-md flex flex-col justify-between px-lg py-xs text-primary-300">
             <div class="text-subtitle">目前贊助總金額</div>
-            <div class="text-display">987,655,873</div>
+            <div class="md:text-display">987,655,873</div>
           </div>
         </div>
         <div class="md:w-3/5">
-          <app-sponsor-card class="block mb-md" imgPath="assets/images/MoonStars.svg" title="喵衛星" money="'600'"></app-sponsor-card>
-          <app-sponsor-card class="block mb-md" imgPath="assets/images/Planet.svg" title="喵行星" money="6,000"></app-sponsor-card>
-          <app-sponsor-card class="block mb-md" imgPath="assets/images/Sun.svg" title="喵恆星" money="60,000"></app-sponsor-card>
-          <app-sponsor-card  imgPath="assets/images/ShootingStar.svg" title="喵彗星" money="自訂贊助金額"></app-sponsor-card>
+          <app-sponsor-card class="block mb-md" imgPath="assets/images/MoonStars.svg" title="喵衛星"
+            money="'600'"></app-sponsor-card>
+          <app-sponsor-card class="block mb-md" imgPath="assets/images/Planet.svg" title="喵行星"
+            money="6,000"></app-sponsor-card>
+          <app-sponsor-card class="block mb-md" imgPath="assets/images/Sun.svg" title="喵恆星"
+            money="60,000"></app-sponsor-card>
+          <app-sponsor-card imgPath="assets/images/ShootingStar.svg" title="喵彗星" money="自訂贊助金額"></app-sponsor-card>
         </div>
       </section>
-      <section class="py-xl">
-        <app-item-title title="服務信箱" subtitle="Service Mail"></app-item-title>
+      <section class="py-xl flex flex-wrap">
+        <div class="md:w-2/5 md:pr-md md:mb-0 mb-md">
+          <app-item-title title="服務信箱" subtitle="Service Mail"></app-item-title>
+          <div class="text-subtitle py-md">您的聲音，我們的行動！</div>
+          <div>親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！</div>
+        </div>
+        <div class="md:w-3/5 relative w-full">
+          <div class="bg-primary-100 rounded-md w-full h-full p-lg z-10 relative">
+            <div>
+              姓名
+              <br>
+              <input class="my-sm" type="text">
+            </div>
+            <div>
+              Email
+              <br>
+              <input class="my-sm" type="text">
+            </div>
+            <div>
+              電話/手機
+              <br>
+              <input class="my-sm" type="text">
+            </div>
+            <div>
+              對我們的建議
+              <br>
+              <textarea name="" id="" cols="30" rows="4"></textarea>
+            </div>
+            <button class="w-full rounded-md py-sm px-md bg-primary-300 mt-xl">確認送出</button>
+          </div>
+          <div class="absolute left-[-160px] z-0 bottom-0 md:block hidden">
+            <img class="h-[230px] z-0" src="assets/images/Black-02.png" alt="">
+          </div>
+        </div>
       </section>
     </div>
   </div>
