@@ -7,6 +7,8 @@ import { LoadingComponent } from './pages/loading/loading.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './feature/footer/footer.component';
 import { HeaderComponent } from './feature/header/header.component';
+import { ItemTitleComponent } from './feature/item-title/item-title.component';
+import { EventBlockComponent } from './feature/event-block/event-block.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeaderComponent } from './feature/header/header.component';
     LoadingComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ItemTitleComponent,
+    EventBlockComponent
   ],
   imports: [
     BrowserModule,

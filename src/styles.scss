@@ -9,20 +9,20 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 $colors: (
-  white: #FFFFFF,
+  white: #ffffff,
   gray: (
-    100: #E2E2E2,
-    200: #C6C6C6,
-    300: #8C8C8C,
+    100: #e2e2e2,
+    200: #c6c6c6,
+    300: #8c8c8c,
     400: #444444,
     500: #000000
   ),
   primary: (
-    100: #FBFFE1,
-    200: #EEFFA9,
-    300: #D1FA31,
-    400: #BBE217,
-    500: #A8C400
+    100: #fbffe1,
+    200: #eeffa9,
+    300: #d1fa31,
+    400: #bbe217,
+    500: #a8c400
   )
 );
 
@@ -31,5 +31,35 @@ $colors: (
   // src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
   //      url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
   //      url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+
+.btn-sm {
+  background-color: map-get(map-get($colors, primary), 300);
+  border-radius: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 700;
+}
+
+@keyframes bounceRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(15px) scaleY(0.9);
+  }
+  // 50% {
+  //   transform: translateX(50px) scaleY(1);
+  // }
+  // 75% {
+  //   transform: translateX(75px) scaleY(0.9);
+  // }
+}
+
+.bounce-right {
+  animation: bounceRight 1s ease infinite;
 }
 

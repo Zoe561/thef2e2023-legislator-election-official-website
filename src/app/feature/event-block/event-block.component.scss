@@ -1,0 +1,7 @@
+.desc-box{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 這裡的數字3表示最多顯示的行數 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
