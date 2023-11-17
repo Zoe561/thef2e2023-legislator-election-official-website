@@ -12,6 +12,7 @@ import { EventBlockComponent } from './feature/event-block/event-block.component
 import { TabComponent } from './feature/tab/tab.component';
 import { TabsComponent } from './feature/tabs/tabs.component';
 import { IssueBlockComponent } from './feature/issue-block/issue-block.component';
+import { SponsorCardComponent } from './feature/sponsor-card/sponsor-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { IssueBlockComponent } from './feature/issue-block/issue-block.component
     EventBlockComponent,
     TabComponent,
     TabsComponent,
-    IssueBlockComponent
+    IssueBlockComponent,
+    SponsorCardComponent
   ],
   imports: [
     BrowserModule,
