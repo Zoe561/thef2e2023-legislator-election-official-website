@@ -1,0 +1,33 @@
+.btn-img{
+  // transition: opacity 0.2s ease;
+  // opacity: 0;
+  display: none;
+}
+
+a:hover .btn-img{
+  opacity: 1;
+  display: block;
+}
+
+.sidebar{
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+}
+
+/* 模糊效果 */
+.bur-layer{
+  z-index: 1;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(4px);
+  top: 0;
+  right: 0;
+}

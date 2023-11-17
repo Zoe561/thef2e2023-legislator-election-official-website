@@ -1,14 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+@import "../node_modules/tailwindcss/base.css";
+@import "../node_modules/tailwindcss/components.css";
+@import "../node_modules/tailwindcss/utilities.css";
+
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+$colors: (
+  white: #FFFFFF,
+  gray: (
+    100: #E2E2E2,
+    200: #C6C6C6,
+    300: #8C8C8C,
+    400: #444444,
+    500: #000000
+  ),
+  primary: (
+    100: #FBFFE1,
+    200: #EEFFA9,
+    300: #D1FA31,
+    400: #BBE217,
+    500: #A8C400
+  )
+);
+
 * {
-  font-family: 'Noto Sans TC';
-  // font-style: normal;
-  font-weight: 700;
+  font-family: "Noto Sans TC";
   // src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
   //      url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
   //      url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
 }
 
-.text-xl{
-  // font-size: ;
-}

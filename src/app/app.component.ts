@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'thef2e2023-legislator-election-official-website';
+  title = '黑新星競選官網';
 }
