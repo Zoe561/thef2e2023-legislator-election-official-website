@@ -11,10 +11,10 @@
     <div class="lg:hidden p-md">
       <div [class.hidden]="!menuVisible" [ngTemplateOutlet]="logo01"></div>
     </div>
-    <a *ngFor="let item of menuList"
+    <a *ngFor="let item of menuList" [href]="item.id"
       class="h-[44px] w-[120px] rounded-[48px] hover:bg-primary-300 flex justify-center items-center cursor-pointer">
       <img class="mr-xs btn-img" src="assets/images/HandCoins.svg" alt="">
-      {{item}}</a>
+      {{item.name}}</a>
     <div class="lg:hidden">
       <div class="p-md">
         <hr>
