@@ -9,6 +9,9 @@ import { FooterComponent } from './feature/footer/footer.component';
 import { HeaderComponent } from './feature/header/header.component';
 import { ItemTitleComponent } from './feature/item-title/item-title.component';
 import { EventBlockComponent } from './feature/event-block/event-block.component';
+import { TabComponent } from './feature/tab/tab.component';
+import { TabsComponent } from './feature/tabs/tabs.component';
+import { IssueBlockComponent } from './feature/issue-block/issue-block.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { EventBlockComponent } from './feature/event-block/event-block.component
     FooterComponent,
     HeaderComponent,
     ItemTitleComponent,
-    EventBlockComponent
+    EventBlockComponent,
+    TabComponent,
+    TabsComponent,
+    IssueBlockComponent
   ],
   imports: [
     BrowserModule,

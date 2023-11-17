@@ -1,13 +1,13 @@
-<div class="flex">
-  <div class="w-2/5">
-    <img [src]="imgPath" alt="">
+<div class="md:flex">
+  <div class="md:w-2/5 w-100 mr-md">
+    <img class=" w-[90vw]" [src]="imgPath">
   </div>
-  <div class="w-3/5">
+  <div class="md:w-3/5">
     <div class="text-primary-500 text-title">{{title}}</div>
     <div class=" desc-box">
       {{desc}}
     </div>
-    <div class="flex justify-between items-center py-sm">
+    <div class="flex justify-between items-center py-sm ">
       <div class="text-primary-500">{{time}}</div>
       <button class="btn-sm">閱讀更多
         <img class="ml-sm bounce-right" src="assets/images/ArrowRight.svg" alt="">

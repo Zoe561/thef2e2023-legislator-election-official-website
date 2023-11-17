@@ -1,0 +1,10 @@
+.bg-img {
+  background-image: url("../../../assets/images/Oval.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 268px;
+  width: 320px;
+  @media (max-width: 280px) {
+  width: auto;
+}
+}

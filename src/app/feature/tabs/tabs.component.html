@@ -1,0 +1,8 @@
+<!-- tabs.component.html -->
+<div class="tabs flex">
+  <div *ngFor="let tab of tabs" [class.bg-primary-100]="isActiveTab(tab)" [class.bg-primary-400]="!isActiveTab(tab)"
+    class="tab-title p-md rounded-t-[16px] w-1/3 text-center" (click)="selectTab(tab)">
+    {{tab.tabTitle}}
+  </div>
+</div>
+<ng-content></ng-content>
