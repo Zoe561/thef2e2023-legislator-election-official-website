@@ -46,27 +46,39 @@ $colors: (
 input {
   height: 32px;
   width: 100%;
-  border: 2px solid map-get(map-get($colors, gray), 100);
+  border: 1px solid map-get(map-get($colors, gray), 100);
   border-radius: 8px;
   transition: border-color 0.3s;
+  padding: 8px;
   &:hover {
-    border: 2px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
   }
   &:focus {
-    border: 2px solid map-get(map-get($colors, primary), 500);
+    outline: 1px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
+  }
+  &:focus-visible {
+    outline: 1px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
   }
 }
 
-textarea{
+textarea {
   width: 100%;
-  border: 2px solid map-get(map-get($colors, gray), 100);
+  border: 1px solid map-get(map-get($colors, gray), 100);
   border-radius: 8px;
   transition: border-color 0.3s;
   &:hover {
-    border: 2px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
   }
   &:focus {
-    border: 2px solid map-get(map-get($colors, primary), 500);
+    outline: 1px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
+  }
+  &:focus-visible {
+    padding: 8px;
+    outline: 1px solid map-get(map-get($colors, primary), 500);
+    border: 1px solid map-get(map-get($colors, primary), 500);
   }
 }
 
