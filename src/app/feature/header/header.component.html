@@ -12,8 +12,8 @@
       <div [class.hidden]="!menuVisible" [ngTemplateOutlet]="logo01"></div>
     </div>
     <a *ngFor="let item of menuList" [href]="item.id"
-      class="h-[44px] w-[120px] rounded-[48px] hover:bg-primary-300 flex justify-center items-center cursor-pointer">
-      <img class="mr-xs btn-img" src="assets/images/HandCoins.svg" alt="">
+      class="h-[44px] w-[120px] rounded-[48px] hover:bg-primary-300 flex justify-center items-center cursor-pointer" (click)="closeBurLayer()">
+      <img class="mr-xs btn-img" src="assets/images/HandCoins.svg" [alt]="item.name">
       {{item.name}}</a>
     <div class="lg:hidden">
       <div class="p-md">
