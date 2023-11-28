@@ -1,14 +1,14 @@
 {
   "name": "thef2e2023-legislator-election-official-website",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /thef2e2023-legislator-election-official-website/ --configuration production ",
+    "patchVersion": "npm --no-git-tag-version version patch",
+    "build": "npm run patchVersion && ng build --base-href /thef2e2023-legislator-election-official-website/ --configuration production ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npx angular-cli-ghpages --dir=dist/thef2e2023-legislator-election-official-website"
-
   },
   "private": true,
   "dependencies": {
